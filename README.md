@@ -35,10 +35,6 @@ npm install
 # 后台运行（使用 nohup）
 nohup node server.js > app.log 2>&1 &
 
-# 或使用 screen
-screen -S dataset
-node server.js
-# Ctrl+A+D 退出 screen
 ```
 
 ## 端口
@@ -55,3 +51,5 @@ node server.js
 ```bash
 PORT=8080 node server.js
 ```
+## 注意
+访问url后不会自动刷新，请自行点击选择左侧栏后即可刷新
