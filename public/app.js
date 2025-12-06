@@ -107,6 +107,18 @@ function resetData() {
     setStatus('Reset to last saved', 'success');
 }
 
+// Copy data
+function copyData() {
+    const textarea = document.getElementById('updatedData');
+    navigator.clipboard.writeText(textarea.value).then(() => {
+        setStatus('Copied to clipboard!', 'success');
+    }).catch(() => {
+        textarea.select();
+        document.execCommand('copy');
+        setStatus('Copied to clipboard!', 'success');
+    });
+}
+
 // Status
 function setStatus(msg, type = '') {
     const el = document.getElementById('status');

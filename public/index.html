@@ -46,6 +46,8 @@
         .btn-save:disabled { background: #666; cursor: not-allowed; }
         .btn-reset { background: #ff9800; color: #fff; }
         .btn-reset:hover { background: #f57c00; }
+        .btn-copy { background: #2196f3; color: #fff; }
+        .btn-copy:hover { background: #1976d2; }
         
         /* Status */
         .status { font-size: 12px; color: #aaa; padding: 4px 0; }
@@ -80,6 +82,7 @@
             </div>
             <div class="save-bar">
                 <span class="status" id="status"></span>
+                <button class="btn btn-copy" onclick="copyData()">Copy</button>
                 <button class="btn btn-reset" onclick="resetData()">Reset</button>
                 <button class="btn btn-save" id="saveBtn" onclick="saveData()">Save</button>
             </div>
