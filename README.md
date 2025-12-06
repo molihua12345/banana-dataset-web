@@ -1,5 +1,4 @@
-# Dataset Editor
-
+# banana-dataset-web
 用于在线协作修改数据集的 Web 工具。
 
 ## 功能
