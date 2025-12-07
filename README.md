@@ -14,7 +14,7 @@
 ```bash
 cd banana-dataset-web
 
-hf login --token <hf_YOUR_ACCESS_TOKEN>
+hf auth login # then input your access token
 
 hf download nanochart-dataset/nano_dataset dataset_web.zip --repo-type dataset --local-dir .
 
